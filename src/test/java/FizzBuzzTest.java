@@ -71,4 +71,26 @@ public class FizzBuzzTest {
         // then
         assertThat(out, is("fizz"));
     }
+
+    @Test
+    public void should_say_buzz_when_meet_10() throws Exception {
+        // given
+
+        // when
+        String out = fizzBuzz.say(10);
+        // then
+        assertThat(out, is("buzz"));
+    }
+
+    @Test
+    public void should_say_fizzbuzz_when_meet_mutilpies_of_3_and_5() throws Exception {
+        // given
+
+        // when
+        String out30 = fizzBuzz.say(30);
+        String out45 = fizzBuzz.say(45);
+        // then
+        assertThat(out45, is("fizzbuzz"));
+        assertThat(out30, is("fizzbuzz"));
+    }
 }

@@ -40,4 +40,15 @@ public class FizzBuzzTest {
         // then
         assertThat(out, is("fizz"));
     }
+
+    @Test
+    public void should_say_buzz_when_meet_5() throws Exception {
+        // given
+
+        // when
+        String out = fizzBuzz.say(5);
+        // then
+        assertThat(out, is("buzz"));
+    }
+
 }

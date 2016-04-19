@@ -21,6 +21,7 @@ public class FizzBuzzTest {
         // then
         assertThat(out, is("1"));
     }
+
     @Test
     public void should_say_2_when_meet_2() throws Exception {
         // given
@@ -59,5 +60,15 @@ public class FizzBuzzTest {
         String out = fizzBuzz.say(15);
         // then
         assertThat(out, is("fizzbuzz"));
+    }
+
+    @Test
+    public void should_say_fizz_when_meet_6() throws Exception {
+        // given
+
+        // when
+        String out = fizzBuzz.say(6);
+        // then
+        assertThat(out, is("fizz"));
     }
 }

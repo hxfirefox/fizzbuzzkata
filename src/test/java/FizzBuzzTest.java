@@ -21,4 +21,13 @@ public class FizzBuzzTest {
         // then
         assertThat(out, is("1"));
     }
+    @Test
+    public void should_say_2_when_meet_2() throws Exception {
+        // given
+
+        // when
+        String out = fizzBuzz.say(2);
+        // then
+        assertThat(out, is("2"));
+    }
 }

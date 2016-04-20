@@ -1,14 +1,10 @@
 public class FizzBuzz {
     public String say(int number) {
-        if (number % 15 == 0) {
-            return "fizzbuzz";
-        }
-        if (number % 3 == 0) {
-            return "fizz";
-        }
-        if (number % 5 == 0) {
-            return "buzz";
-        }
-        return String.valueOf(number);
+        final Word commonNumberWord = new CommonNumberWord(null);
+        final Word buzzWord = new BuzzWord(commonNumberWord);
+        final Word fizzWord = new FizzWord(buzzWord);
+        final Word word = new FizzBuzzWord(fizzWord);
+
+        return word.say(number);
     }
 }

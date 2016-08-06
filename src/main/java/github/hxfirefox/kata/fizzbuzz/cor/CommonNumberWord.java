@@ -9,4 +9,14 @@ public class CommonNumberWord extends Word {
     public String say(int number) {
         return String.valueOf(number);
     }
+
+    @Override
+    public boolean match(int number) {
+        return true;
+    }
+
+    @Override
+    public String out(int number) {
+        return String.valueOf(number);
+    }
 }

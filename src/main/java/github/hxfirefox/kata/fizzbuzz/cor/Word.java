@@ -8,4 +8,8 @@ public abstract class Word {
     }
 
     public abstract String say(int number);
+
+    public abstract boolean match(int number);
+
+    public abstract String out(int number);
 }

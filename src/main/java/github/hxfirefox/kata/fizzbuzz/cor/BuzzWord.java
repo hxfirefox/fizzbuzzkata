@@ -12,4 +12,14 @@ public class BuzzWord extends Word {
         }
         return word.say(number);
     }
+
+    @Override
+    public boolean match(int number) {
+        return number % 5 == 0;
+    }
+
+    @Override
+    public String out(int number) {
+        return "Buzz";
+    }
 }

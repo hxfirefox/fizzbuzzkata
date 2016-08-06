@@ -12,4 +12,14 @@ public class FizzWord extends Word {
         }
         return word.say(number);
     }
+
+    @Override
+    public boolean match(int number) {
+        return number % 3 == 0;
+    }
+
+    @Override
+    public String out(int number) {
+        return "Fizz";
+    }
 }

@@ -1,3 +1,5 @@
+package github.hxfirefox.kata.fizzbuzz.cor;
+
 import org.junit.Before;
 import org.junit.Test;
 

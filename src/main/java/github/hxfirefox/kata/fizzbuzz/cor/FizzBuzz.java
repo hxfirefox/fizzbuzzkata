@@ -1,3 +1,5 @@
+package github.hxfirefox.kata.fizzbuzz.cor;
+
 public class FizzBuzz {
     public String say(int number) {
         final Word commonNumberWord = new CommonNumberWord(null);

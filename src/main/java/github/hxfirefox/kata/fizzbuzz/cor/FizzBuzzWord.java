@@ -1,7 +1,6 @@
-/**
- * Created by hx on 16-4-19.
- */
-public class FizzBuzzWord  extends  Word{
+package github.hxfirefox.kata.fizzbuzz.cor;
+
+public class FizzBuzzWord  extends Word {
 
     public FizzBuzzWord(Word word) {
         super(word);

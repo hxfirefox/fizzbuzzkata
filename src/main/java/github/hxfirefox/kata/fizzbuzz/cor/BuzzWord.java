@@ -1,4 +1,6 @@
-public class BuzzWord extends Word{
+package github.hxfirefox.kata.fizzbuzz.cor;
+
+public class BuzzWord extends Word {
     public BuzzWord(Word word) {
         super(word);
     }

@@ -1,3 +1,5 @@
+package github.hxfirefox.kata.fizzbuzz.cor;
+
 public abstract class Word {
     protected Word word;
 

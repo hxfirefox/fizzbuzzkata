@@ -6,14 +6,6 @@ public class BuzzWord extends Word {
     }
 
     @Override
-    public String say(int number) {
-        if (number % 5 == 0) {
-            return "buzz";
-        }
-        return word.say(number);
-    }
-
-    @Override
     public boolean match(int number) {
         return number % 5 == 0;
     }

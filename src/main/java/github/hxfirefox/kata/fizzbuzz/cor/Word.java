@@ -7,7 +7,9 @@ public abstract class Word {
         this.word = word;
     }
 
-    public abstract String say(int number);
+    public String say(int number){
+        return match(number) ? out(number) : word.say(number);
+    }
 
     public abstract boolean match(int number);
 

@@ -6,11 +6,6 @@ public class CommonNumberWord extends Word {
     }
 
     @Override
-    public String say(int number) {
-        return String.valueOf(number);
-    }
-
-    @Override
     public boolean match(int number) {
         return true;
     }

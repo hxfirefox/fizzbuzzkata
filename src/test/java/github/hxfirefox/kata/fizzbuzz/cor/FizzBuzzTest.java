@@ -41,7 +41,7 @@ public class FizzBuzzTest {
         // when
         String out = fizzBuzz.say(3);
         // then
-        assertThat(out, is("fizz"));
+        assertThat(out, is("Fizz"));
     }
 
     @Test
@@ -51,7 +51,7 @@ public class FizzBuzzTest {
         // when
         String out = fizzBuzz.say(5);
         // then
-        assertThat(out, is("buzz"));
+        assertThat(out, is("Buzz"));
     }
 
     @Test
@@ -61,7 +61,7 @@ public class FizzBuzzTest {
         // when
         String out = fizzBuzz.say(15);
         // then
-        assertThat(out, is("fizzbuzz"));
+        assertThat(out, is("FizzBuzz"));
     }
 
     @Test
@@ -71,7 +71,7 @@ public class FizzBuzzTest {
         // when
         String out = fizzBuzz.say(6);
         // then
-        assertThat(out, is("fizz"));
+        assertThat(out, is("Fizz"));
     }
 
     @Test
@@ -81,7 +81,7 @@ public class FizzBuzzTest {
         // when
         String out = fizzBuzz.say(10);
         // then
-        assertThat(out, is("buzz"));
+        assertThat(out, is("Buzz"));
     }
 
     @Test
@@ -92,7 +92,7 @@ public class FizzBuzzTest {
         String out30 = fizzBuzz.say(30);
         String out45 = fizzBuzz.say(45);
         // then
-        assertThat(out45, is("fizzbuzz"));
-        assertThat(out30, is("fizzbuzz"));
+        assertThat(out45, is("FizzBuzz"));
+        assertThat(out30, is("FizzBuzz"));
     }
 }

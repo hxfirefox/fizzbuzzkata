@@ -6,14 +6,6 @@ public class FizzWord extends Word {
     }
 
     @Override
-    public String say(int number) {
-        if (number % 3 == 0) {
-            return "fizz";
-        }
-        return word.say(number);
-    }
-
-    @Override
     public boolean match(int number) {
         return number % 3 == 0;
     }

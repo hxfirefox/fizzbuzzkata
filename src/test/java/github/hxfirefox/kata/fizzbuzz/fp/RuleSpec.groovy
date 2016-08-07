@@ -6,8 +6,8 @@ import static github.hxfirefox.kata.fizzbuzz.fp.Action.nop
 import static github.hxfirefox.kata.fizzbuzz.fp.Action.to
 import static github.hxfirefox.kata.fizzbuzz.fp.Matcher.always
 import static github.hxfirefox.kata.fizzbuzz.fp.Matcher.times
-import static github.hxfirefox.kata.fizzbuzz.fp.Rules.allof
-import static github.hxfirefox.kata.fizzbuzz.fp.Rules.anyof
+import static github.hxfirefox.kata.fizzbuzz.fp.Rules.allOf
+import static github.hxfirefox.kata.fizzbuzz.fp.Rules.anyOf
 import static github.hxfirefox.kata.fizzbuzz.fp.Rules.atom
 
 class RuleSpec extends Specification {
@@ -15,11 +15,11 @@ class RuleSpec extends Specification {
         Rule r1_3 = atom(times(3), to("Fizz"))
         Rule r1_5 = atom(times(5), to("Buzz"))
 
-        Rule r1 = anyof(r1_3, r1_5)
-        Rule r2 = anyof(allof(r1_3, r1_5))
+        Rule r1 = anyOf(r1_3, r1_5)
+        Rule r2 = anyOf(allOf(r1_3, r1_5))
         Rule rd = atom(always(true), nop())
 
-        anyof(r2, r1, rd)
+        anyOf(r2, r1, rd)
     }
 
     def "Fizz Buzz"() {

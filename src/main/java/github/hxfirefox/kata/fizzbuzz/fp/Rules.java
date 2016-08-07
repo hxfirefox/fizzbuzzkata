@@ -10,14 +10,14 @@ public final class Rules {
         return n -> matcher.matches(n) ? action.to(n) : "";
     }
 
-    public static Rule anyof(Rule... rules) {
+    public static Rule anyOf(Rule... rules) {
         return n ->sstream(n, rules)
                 .filter(s -> !s.isEmpty())
                 .findFirst()
                 .orElse("");
     }
 
-    public static Rule allof(Rule... rules) {
+    public static Rule allOf(Rule... rules) {
         return n -> sstream(n, rules)
                 .collect(joining());
     }
